@@ -15,12 +15,13 @@
   (page A4)
   (title_block
     (title "Ham Radio USB Data Programmer")
-    (date 2015-10-16)
-    (rev 2)
+    (date 2015-10-26)
+    (rev 3)
     (company "© 2015 Gregor Riepl")
     (comment 1 "Licensed under the CERN OHL v1.2")
-    (comment 3 "2-Wire and 3-Wire Mode Supported")
-    (comment 4 "24mA Output Drivers (74AC)")
+    (comment 2 "3-wire: Populate JP2/2-3, JP4 (not Q1)")
+    (comment 3 "2-wire: Populate JP1, JP2/1-2, Q1")
+    (comment 4 "Connect shield to ground: Populate JP3, JP5")
   )
 
   (layers

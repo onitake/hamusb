@@ -36,8 +36,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Ham Radio USB Data Programmer"
-Date "2015-10-12"
-Rev "2"
+Date "2015-10-26"
+Rev "3"
 Comp "© 2015 Gregor Riepl"
 Comment1 "Licensed under the CERN OHL v1.2"
 Comment2 ""
