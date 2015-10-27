@@ -37,7 +37,7 @@ encoding utf-8
 Sheet 1 1
 Title "Ham Radio USB Data Programmer"
 Date "2015-10-27"
-Rev "4"
+Rev "5"
 Comp "© 2015 Gregor Riepl"
 Comment1 "Licensed under the CERN OHL v1.2"
 Comment2 ""
@@ -279,20 +279,20 @@ Wire Wire Line
 $Comp
 L CONN_01X04 P2
 U 1 1 561C0067
-P 9700 3000
-F 0 "P2" H 9700 3250 50  0000 C CNN
-F 1 "DATA" V 9800 3000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 9700 3000 60  0001 C CNN
-F 3 "" H 9700 3000 60  0000 C CNN
-	1    9700 3000
+P 9900 3000
+F 0 "P2" H 9900 3250 50  0000 C CNN
+F 1 "DATA" V 10000 3000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 9900 3000 60  0001 C CNN
+F 3 "" H 9900 3000 60  0000 C CNN
+	1    9900 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 2850 9500 2850
+	8700 2850 9700 2850
 Wire Wire Line
 	8800 2850 8800 2750
 Wire Wire Line
-	8700 2950 9500 2950
+	8700 2950 9700 2950
 Wire Wire Line
 	9400 2950 9400 2750
 Connection ~ 8800 2850
@@ -300,31 +300,31 @@ Connection ~ 9400 2950
 $Comp
 L GND #PWR010
 U 1 1 561C060F
-P 9300 3250
-F 0 "#PWR010" H 9300 3000 50  0001 C CNN
-F 1 "GND" H 9300 3100 50  0000 C CNN
-F 2 "" H 9300 3250 60  0000 C CNN
-F 3 "" H 9300 3250 60  0000 C CNN
-	1    9300 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR011
-U 1 1 561C0615
 P 9500 3250
-F 0 "#PWR011" H 9500 3000 50  0001 C CNN
-F 1 "Earth" H 9500 3100 50  0001 C CNN
+F 0 "#PWR010" H 9500 3000 50  0001 C CNN
+F 1 "GND" H 9500 3100 50  0000 C CNN
 F 2 "" H 9500 3250 60  0000 C CNN
 F 3 "" H 9500 3250 60  0000 C CNN
 	1    9500 3250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Earth #PWR011
+U 1 1 561C0615
+P 9700 3250
+F 0 "#PWR011" H 9700 3000 50  0001 C CNN
+F 1 "Earth" H 9700 3100 50  0001 C CNN
+F 2 "" H 9700 3250 60  0000 C CNN
+F 3 "" H 9700 3250 60  0000 C CNN
+	1    9700 3250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9500 3050 9300 3050
+	9700 3050 9500 3050
 Wire Wire Line
-	9300 3050 9300 3250
+	9500 3050 9500 3250
 Wire Wire Line
-	9500 3150 9500 3250
+	9700 3150 9700 3250
 $Comp
 L Crystal Y1
 U 1 1 561C08BA
@@ -571,4 +571,16 @@ Wire Wire Line
 Wire Wire Line
 	3900 3550 3700 3550
 Connection ~ 3900 3550
+Text Label 6400 2850 0    60   ~ 0
+TX
+Text Label 6400 2950 0    60   ~ 0
+RX
+Text Label 9700 2950 2    60   ~ 0
+DI
+Text Label 9700 2850 2    60   ~ 0
+DO
+Text Label 4600 3150 2    60   ~ 0
+D+
+Text Label 4600 3050 2    60   ~ 0
+D-
 $EndSCHEMATC
